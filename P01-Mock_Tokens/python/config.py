@@ -90,8 +90,12 @@ def send_transaction(w3: Web3, account: Account, tx: Dict[str, Any]) -> Dict[str
     # Sign transaction
     signed_tx = account.sign_transaction(tx)
     
-    # Send transaction
-    tx_hash = w3.eth.send_raw_transaction(signed_tx.raw_transaction)
+    # Send transaction (rawTransaction for web3.py v6+, raw_transaction for v5)
+    raw_tx = getattr(signed_tx, 'rawTransaction', getattr(signed_tx, 'raw_transaction', None))
+    if raw_tx is None:
+        raise Exception("Could not get raw transaction from signed transaction")
+    
+    tx_hash = w3.eth.send_raw_transaction(raw_tx)
     print(f"Transaction sent: {tx_hash.hex()}")
     
     # Wait for receipt
