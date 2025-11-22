@@ -15,15 +15,15 @@ BLOCKCHAINS = {
         'name': 'Arbitrum Sepolia',
         'rpc_env': 'ARBITRUM_SEPOLIA_RPC_URL',
         'native_token': 'ETH',
-        'usdc_env': 'USDC_ADDRESS_ARB',
-        'eurc_env': 'EURC_ADDRESS_ARB',
+        'usdc_env': 'MOCK_USDC_ADDRESS_ARBITRUM',
+        'eurc_env': 'MOCK_EURC_ADDRESS_ARBITRUM',
     },
     'poly': {
         'name': 'Polygon Amoy',
         'rpc_env': 'POLYGON_AMOY_RPC_URL',
         'native_token': 'POL',
-        'usdc_env': 'USDC_ADDRESS_POLY',
-        'eurc_env': 'EURC_ADDRESS_POLY',
+        'usdc_env': 'MOCK_USDC_ADDRESS_POLYGON',
+        'eurc_env': 'MOCK_EURC_ADDRESS_POLYGON',
     }
 }
 
@@ -104,12 +104,12 @@ Examples:
   python balance2.py 0x1234... --poly
   
 Environment Variables:
-  ARBITRUM_SEPOLIA_RPC_URL - RPC endpoint for Arbitrum Sepolia
-  POLYGON_AMOY_RPC_URL     - RPC endpoint for Polygon Amoy
-  USDC_ADDRESS_ARB         - MockUSDC address on Arbitrum (or USDC_ADDRESS)
-  EURC_ADDRESS_ARB         - MockEURC address on Arbitrum (or EURC_ADDRESS)
-  USDC_ADDRESS_POLY        - MockUSDC address on Polygon (or USDC_ADDRESS)
-  EURC_ADDRESS_POLY        - MockEURC address on Polygon (or EURC_ADDRESS)
+  ARBITRUM_SEPOLIA_RPC_URL      - RPC endpoint for Arbitrum Sepolia
+  POLYGON_AMOY_RPC_URL          - RPC endpoint for Polygon Amoy
+  MOCK_USDC_ADDRESS_ARBITRUM    - MockUSDC address on Arbitrum (or USDC_ADDRESS)
+  MOCK_EURC_ADDRESS_ARBITRUM    - MockEURC address on Arbitrum (or EURC_ADDRESS)
+  MOCK_USDC_ADDRESS_POLYGON     - MockUSDC address on Polygon (or USDC_ADDRESS)
+  MOCK_EURC_ADDRESS_POLYGON     - MockEURC address on Polygon (or EURC_ADDRESS)
         """
     )
     
