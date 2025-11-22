@@ -28,11 +28,16 @@ DECIMALS = 6
 
 
 def get_web3(rpc_url: str = None) -> Web3:
-    """Get Web3 instance"""
+    """Get Web3 instance with PoA middleware for compatibility"""
     if rpc_url is None:
         rpc_url = os.getenv("RPC_URL", "http://127.0.0.1:8545")
     
     w3 = Web3(Web3.HTTPProvider(rpc_url))
+    
+    # Inject PoA middleware for chains like Polygon, BSC, etc.
+    # This allows handling of extraData > 32 bytes in block headers
+    from web3.middleware import geth_poa_middleware
+    w3.middleware_onion.inject(geth_poa_middleware, layer=0)
     
     if not w3.is_connected():
         raise ConnectionError(f"Could not connect to {rpc_url}")
