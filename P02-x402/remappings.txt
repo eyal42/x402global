@@ -1,0 +1,4 @@
+@openzeppelin/=lib/openzeppelin-contracts/
+forge-std/=lib/forge-std/src/
+mock-tokens/=/Users/eyal42/Work/Entrepreneurship/SamexLabs/ETHGlobalBuenosAires2025/x402global/P01-Mock_Tokens/src/
+

@@ -4,3 +4,9 @@
 [submodule "P01-Mock_Tokens/lib/openzeppelin-contracts"]
 	path = P01-Mock_Tokens/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "P02-x402/lib/forge-std"]
+	path = P02-x402/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "P02-x402/lib/openzeppelin-contracts"]
+	path = P02-x402/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts

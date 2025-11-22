@@ -1,0 +1,6 @@
+web3==6.15.1
+flask==3.0.0
+requests==2.31.0
+eth-account==0.11.0
+python-dotenv==1.0.0
+pydantic==2.9.2  # ← Updated from 2.5.0
