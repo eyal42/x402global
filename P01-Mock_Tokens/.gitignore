@@ -35,3 +35,6 @@ deploy/addresses.*.json
 
 # Logs
 *.log
+
+# Temporary files
+success.txt

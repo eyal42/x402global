@@ -161,7 +161,8 @@ ARBITRUM_SEPOLIA_RPC_URL=https://sepolia-rollup.arbitrum.io/rpc
 forge script script/Deploy.s.sol:Deploy \
   --rpc-url $ARBITRUM_SEPOLIA_RPC_URL \
   --broadcast \
-  --verify
+  --verify \ 
+  --private-key $DEPLOYER_PRIVATE_KEY
 ```
 
 3. **Setup roles and minter:**
