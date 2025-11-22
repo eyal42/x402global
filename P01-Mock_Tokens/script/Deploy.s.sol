@@ -13,19 +13,19 @@ import "../src/MockEURC.sol";
 contract Deploy is Script {
     function run() external {
         address admin = vm.envAddress("DEPLOYER_WALLET");
-        
+
         vm.startBroadcast();
-        
+
         // Deploy MockUSDC
         MockUSDC usdc = new MockUSDC(admin);
         console.log("MockUSDC deployed at:", address(usdc));
-        
+
         // Deploy MockEURC
         MockEURC eurc = new MockEURC(admin);
         console.log("MockEURC deployed at:", address(eurc));
-        
+
         vm.stopBroadcast();
-        
+
         // Print deployment info
         console.log("\n=== Deployment Summary ===");
         console.log("Admin:", admin);
