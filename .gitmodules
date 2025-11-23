@@ -25,3 +25,18 @@
 [submodule "P04-UniswapV4/lib/openzeppelin-contracts"]
 	path = P04-UniswapV4/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "P05-Full/lib/forge-std"]
+	path = P05-Full/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "P05-Full/lib/openzeppelin-contracts"]
+	path = P05-Full/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "P06-Full/lib/forge-std"]
+	path = P06-Full/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "P06-Full/lib/openzeppelin-contracts"]
+	path = P06-Full/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "P06-Full/lib/v4-core"]
+	path = P06-Full/lib/v4-core
+	url = https://github.com/Uniswap/v4-core
